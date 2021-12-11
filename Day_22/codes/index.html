@@ -1,0 +1,46 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+
+  <script>
+    //fetch (similar fxn; promised based fxn)
+
+    function myFetch(url, params) {
+      return new Promise((resolve, reject) => {
+        var request = new XMLHttpRequest();
+
+        request.open(params.method, url);
+
+        request.onload = function () {
+          resolve(request.response);
+          //   resolve(this.responseText);
+        };
+
+        request.onerror = function () {
+          reject("Error occured during fetch");
+        };
+
+        request.send();
+      });
+    }
+
+    myFetch("https://jsonplacehollsdjfsldkfjklder.typicode.com/users", {
+      method: "GET",
+      headers: {},
+    })
+      .then((response) => console.log(response))
+      .catch((err) => console.log(err));
+
+    async function fetchSomething() {
+      const response = await fetch("");
+      const data = await response.json();
+    }
+
+    //   fetch("https:''", {method:"GET"}).then()
+  </script>
+</html>

@@ -1,0 +1,10 @@
+1. Build a TODO List Application that has the functionality of:
+ - adding a new todo
+ - deleting todo
+ - listing all todos.
+ by making use of Higher-order functions such as (map, filter); and DOM Techniques.
+(To persist TODO  list data, you can make use of LocalStorage API).
+
+2. Visualize all the javascript built-in errors and pass your own default error message to JavaScript built-in errors. Also, make your own custom Exception and used it for handling any errors.
+
+3. Write a program in JS, to demonstrate the exporting and importing of different data types of JS (such as objects, arrays, class, functions) using ES6 modules.

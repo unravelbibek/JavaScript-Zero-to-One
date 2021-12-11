@@ -1,0 +1,107 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      li {
+        list-style: none;
+        padding: 20px;
+        background: wheat;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="fetchUsers()">Fetch Users</button>
+    <output></output>
+  </body>
+
+  <script>
+
+    //console, localStorage, DOM, fetch
+    console.log()
+
+    function fetchUsers() {
+      var request = new XMLHttpRequest();
+      var output = document.body.getElementsByTagName("output")[0];
+
+      request.open("GET", "https://jsonplaceholder.typicode.com/users");
+
+      request.onreadystatechange = function () {
+        if (this.readyState === 3) {
+          console.log("loading..");
+          output.innerHTML = "Loading..";
+        } else if (this.readyState == 4 && this.status == 200) {
+          var data = "<ul>";
+          console.log(this.responseText);
+          JSON.parse(this.responseText).forEach((users) => {
+            data += `<li>${users.username} | ${users.address.street} | ${users.address.geo.lat}</li>`;
+          });
+
+          output.innerHTML = data + "</ul>";
+        }
+      };
+
+      // request.onprogress = function () {
+      //   //   console.log("Loading..");
+      // };
+
+      request.onload = function () {
+        //   console.log(this.responseText);
+        // output.innerHTML =
+      };
+
+      request.onerror = function () {
+        console.log("error occured");
+      };
+
+      request.send();
+      //GET
+      //POST
+      // PUT
+      // DELETE
+      //PATCH
+    }
+    // function fetchUsers() {
+    //   var request = new XMLHttpRequest();
+    //   var output = document.body.getElementsByTagName("output")[0];
+
+    //   request.open("GET", "https://jsonplaceholder.typicode.com/users");
+
+    //   request.onprogress = function () {
+    //     //   console.log("Loading..");
+    //     output.innerHTML = "Loading..";
+    //   };
+
+    //   request.onload = function () {
+    //     //   console.log(this.responseText);
+    //     // output.innerHTML =
+
+    //     var data = "<ul>";
+
+    //     console.log(this.responseText);
+    //     JSON.parse(this.responseText).forEach((users) => {
+    //       data += `<li>${users.username} | ${users.address.street} | ${users.address.geo.lat}</li>`;
+    //     });
+
+    //     output.innerHTML = data + "</ul>";
+    //   };
+
+    //   request.onerror = function () {
+    //     console.log("error occured");
+    //   };
+
+    //   request.send();
+    //   //GET
+    //   //POST
+    //   // PUT
+    //   // DELETE
+    //   //PATCH
+    // }
+  </script>
+</html>

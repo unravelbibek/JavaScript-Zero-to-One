@@ -1,0 +1,55 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <input type="text" id="inputField" />
+      <button onclick="validateData(event)">Validate</button>
+      <span id="output"></span>
+    </form>
+  </body>
+
+  <script>
+    function validateData(event) {
+      event.preventDefault();
+
+      var data = document.getElementById("inputField").value;
+
+      //phone number
+
+      //   var result = data.match(/^((\+977)?(98)[0-9]{8})$/);
+      var result = data.match(/^(http(s)?:\/\/[a-z0-9]{2,15}\.[a-z]{2,8})$/);
+
+      //https://google.com
+      //http://google.com
+
+      //email validation.
+      //   var result = data.match(
+      //     /^([a-z0-9\.]{4,15})@([a-z]{3,10})\.([a-z]{2,10})$/
+      //   );
+
+      //   abcaksdjfhsdkjfhkj@gmail.com abc12@outlook.com saroj.12@gmail.nps
+
+      //   22, 234, 2345, 23456,23432423
+
+      var output = document.getElementById("output");
+      if (result) {
+        // console.log("validated");
+        output.innerText = "validated";
+      } else {
+        // console.log("invalid email format");
+        output.innerText = "invalid url format";
+      }
+    }
+    //   var data = "a quick brown fox jumps over the lazy dog. 123";
+
+    //+ = one or many
+    // * = zero or many
+    // ? = optional
+    // console.log(result);
+  </script>
+</html>
