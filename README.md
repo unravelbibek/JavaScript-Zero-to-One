@@ -23,10 +23,15 @@ Note : The recoded playlist may not be accessible if you're regestrants, because
 
 |Day  | Tutor           | Code     | Slides                    | Recorded Session Playlist | Complete Zip |
 |:---: | :---: | :---:    | :---:                     | :---:                     |  :---:       |
-|1-15 | Sujan Khatiwada |  Downlaod | Downlaod                  | View                      | Downlaod     |
-|16-26| Saroj Dahal     | Downlaod | Downlaod                  | View                      | Downlaod     |
+|1-15 | Sujan Khatiwada |  [Downlaod](https://github.com/whoissubedibibek/jszerotoone/raw/main/Download_shortcuts/Sujan%20Khatiwada/Day2_15.zip) | [Downlaod](https://github.com/whoissubedibibek/jszerotoone/raw/main/Download_shortcuts/Sujan%20Khatiwada/slides.pdf)                  | [View](https://www.youtube.com/playlist?list=PLkHMopSWmw_QSXtIYuc_Nbzsie60iT-In)                      | [Downlaod](https://github.com/whoissubedibibek/jszerotoone/raw/main/Download_shortcuts/Sujan%20Khatiwada/complete.zip)     |
+|16-26| Saroj Dahal     | [Downlaod](https://github.com/whoissubedibibek/jszerotoone/raw/main/Download_shortcuts/Saroj%20Dahal/Day16_26.zip) | [Downlaod](https://github.com/whoissubedibibek/jszerotoone/raw/main/Download_shortcuts/Saroj%20Dahal/slides.pdf)                  | [View](https://www.youtube.com/playlist?list=PLkHMopSWmw_QSXtIYuc_Nbzsie60iT-In)                      | [Downlaod](https://github.com/whoissubedibibek/jszerotoone/raw/main/Download_shortcuts/Saroj%20Dahal/complete.zip)     |
 
+<br>
 
+### Note : Playlist contains priavetly shared videos with registerd participants only. 
+<br>
+
+Thank you! Register here for any upcoming workshop. [Register](https://workshop.itsnp.org/)
 
 
 
